@@ -174,8 +174,6 @@ resource "aws_cloudwatch_metric_alarm" "cluster_db_connections" {
 
 
 
-
-
 ###! Alarms for standalone DB instances
 resource "aws_cloudwatch_metric_alarm" "instances_cpu_utilization" {
   depends_on = [aws_sns_topic_subscription.marbot]
